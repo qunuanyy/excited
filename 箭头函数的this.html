@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //script
+        console.log(this);
+        //普通函数
+        const obj = function () {
+            console.log(this);
+        }
+        obj()
+        //箭头函数
+        const obj1 = fn => {
+            console.log(this);
+
+        }
+        obj1()
+        //嵌套
+        let obj2 = {
+            name: '小徐',
+            sayHi: () => {
+                console.log(this);
+            }
+        }
+        obj2.sayHi()
+
+    </script>
+</body>
+
+</html>

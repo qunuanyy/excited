@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //普通匿名函数。
+        const q = function () {
+            console.log("hello");
+        }
+        q();
+        //箭头函数
+        const w = (a, b) => {
+            console.log(a, b, "hello1");
+        }
+        w(1, 2)
+        //只有一个新参时候（）可以省略
+        const e = a => {
+            console.log(a, "hello2");
+        }
+        e(1)
+        //return 
+        const t = function (x) {
+            return x + x;
+        }
+        console.log(t(1));
+        // 只有一行代码时可以省略return
+        const r = x => x + x
+        console.log(r(1));
+        //对象
+        const y = (username) => ({ name: username })
+        console.log(y('刘德华'));
+    </script>
+</body>
+
+</html>
